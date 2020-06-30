@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1593208538 source:c:\users\gusta\onedrive\Área de trabalho\pastinha23\projects_c++\forca\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+
+1593209080 source:c:\users\gusta\onedrive\Área de trabalho\code\personal projects\forca\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+
