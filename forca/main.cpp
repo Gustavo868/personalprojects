@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -10,16 +11,25 @@ int main() {
 
 
     cout << "Escolha uma palavra: ";
-    cin >> palavra;
+    getline(cin,palavra);
     system("cls");
 
     int tamanho = palavra.size();
-    char secreta[tamanho];
+
+
+
+    string secreta;
+
     for (int i = 0; i < tamanho; i++) {
-        secreta[i] = '_';
+        if (palavra[i] != ' '){
+            secreta.push_back('-');
+        }else{
+            secreta.push_back(palavra[i]);
+        }
     }
     while (chances > 0 && palavra != secreta){
-        char escolha;
+        string escolha;
+        transform(escolha.begin(), escolha.end(), escolha.begin(), ::tolower);
         bool acerto = false;
         cout << "numero de chances: " << chances << "\n\n";
         cout << secreta << "\n\n";
@@ -27,8 +37,8 @@ int main() {
         cin >> escolha;
 
         for (int i = 0; i < tamanho; i++ ) {
-            if(palavra[i] == escolha) {
-                secreta[i] = escolha;
+            if(palavra[i] == escolha[0]) {
+                secreta[i] = escolha[0];
                 acerto =true;
             }
         }

@@ -4,8 +4,9 @@
 	<cstdlib>
 	<string>
 
-1593209080 source:c:\users\gusta\onedrive\Área de trabalho\code\personal projects\forca\main.cpp
+1593556639 source:c:\users\gusta\onedrive\Área de trabalho\code\personal projects\forca\main.cpp
 	<iostream>
 	<cstdlib>
 	<string>
+	<bits/stdc++.h>
 
