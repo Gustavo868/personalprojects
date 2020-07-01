@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1593639184 source:c:\users\gusta\onedrive\Área de trabalho\code\personal projects\forca2\main.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+
